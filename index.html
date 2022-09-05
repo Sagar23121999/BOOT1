@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        nav span {
+            font-family: cursive;
+            font-size: 23px;
+            font-style: italic;
+        }
+
+        nav ul li {
+            font-family: cursive;
+        }
+
+        .box1 {
+            width: 100%;
+            height: 700px;
+            padding-top: 10.5rem;
+            padding-bottom: 6rem;
+            text-align: center;
+            color: #fff;
+            background-image: url('img.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .box1 h2 {
+            margin-top: 60px;
+            font-family: cursive;
+            font-style: italic;
+            font-size: 40px;
+        }
+
+        .box1 h1 {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .box1 button {
+            width: 200px;
+            padding: 16px;
+            margin-top: 33px;
+            font-style: italic;
+            font-family: cursive;
+            font-size: 18px;
+        }
+
+        .box2 {
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        .box2 h2 {
+            font-weight: bold;
+            font-size: 43px;
+        }
+
+        .box2 h3 {
+            font-size: 20px;
+            font-family: cursive;
+            font-style: italic;
+        }
+
+        .box2 .row p {
+            font-size: 18px;
+            font-family: cursive;
+        }
+
+        .box3 {
+            padding: 60px;
+        }
+
+        .box3 h5 {
+            font-family: cursive;
+            font-style: italic;
+        }
+
+        .box3 h2 {
+            font-weight: bold;
+            font-size: 43px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .box3 h4 {
+            font-weight: bold;
+        }
+
+        .box4 {
+            padding: 60px;
+        }
+
+        .box4 h2 {
+            font-weight: bold;
+            font-size: 43px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .box4 h5 {
+            font-family: cursive;
+            font-style: italic;
+        }
+
+        .box4 h3 {
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: right;
+        }
+
+        .box4 p {
+            font-family: cursive;
+            font-style: italic;
+            text-align: right;
+        }
+
+        .box4 .row img {
+            height: 150px;
+            width: 150px;
+            border: 6px solid lightgrey;
+        }
+
+        .box4 span p {
+            background-color: darkorange;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            border: 6px solid lightgrey;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            font-size: 20px;
+            padding: 23px;
+        }
+
+        .box5 h2 {
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .box5 h5 {
+            font-family: cursive;
+            font-style: italic;
+        }
+
+        .box5 .row img {
+            height: 200px;
+            width: 200px;
+            margin-left: 100px;
+            margin-right: 100px;
+            border: 6px solid lightgrey;
+            border-radius: 50%;
+        }
+
+        .box5 .row {
+            padding: 30px;
+        }
+
+        .box5 p {
+            font-style: italic;
+            font-family: cursive;
+            font-size: 16px;
+            margin-left: 50px;
+        }
+
+        .box5 h4 {
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 50px;
+
+        }
+
+
+
+        .box6 img {
+            width: 180px;
+            height: 100px;
+        }
+
+        .box6 .row {
+            padding: 40px;
+        }
+
+        .box7 {
+            width: 100%;
+            padding-top: 5.5rem;
+            padding-bottom: 6rem;
+            text-align: center;
+            color: #fff;
+            background-image: url('map1.jpg');
+            opacity: 0.9;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .box7 h2 {
+            padding-top: 40px;
+            font-weight: bold;
+            font-size: 45px;
+        }
+
+        .box7 p {
+            color: whitesmoke;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .box7 .form-group #name {
+            width: 530px;
+            border-radius: 8px;
+            padding: 15px;
+            margin-right: 40px;
+        }
+
+        .box7 .form-group #email {
+            width: 530px;
+            border-radius: 8px;
+            padding: 15px;
+            margin-right: 40px;
+
+        }
+
+        .box7 .form-group #phone {
+            width: 530px;
+            border-radius: 8px;
+            padding: 15px;
+            margin-right: 40px;
+
+        }
+
+        .box7 .form-group #message {
+            width: 530px;
+            height: 100px;
+            padding-bottom: 200px;
+            padding-top: 18px;
+            padding-left: 13px;
+            border-radius: 8px;
+        }
+
+        .box7 button {
+            width: 220px;
+            padding: 16px 16px;
+            margin-top: 33px;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- nav bar start  -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <span class="text-warning p-2 ml-4">Start Bootstrap</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto p-1 mr-4">
+            <li class="nav-item  p-2 ">
+                <a href="#SERVICES" class="nav-link text-white">SERVICES</a>
+            </li>
+            <li class="nav-item  p-2">
+                <a href="#PORTFOLIO" class="nav-link text-white">PORTFOLIO</a>
+            </li>
+            <li class="nav-item  p-2">
+                <a href="#ABOUT" class="nav-link text-white">ABOUT</a>
+            </li>
+            <li class="nav-item  p-2">
+                <a href="#TEAM" class="nav-link text-white">TEAM</a>
+            </li>
+            <li class="nav-item  p-2">
+                <a href="#CONTACT" class="nav-link text-white">CONTACT</a>
+            </li>
+        </ul>
+</nav>
+<!-- nav bar end  -->
+
+<!-- box1 start  -->
+<section class="box1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center text-white">
+                <div class="subheading">
+                    <h2> Welcome To Our Studio!</h2>
+                </div>
+            </div>
+            <div class="col-12 text-center text-white mt-3">
+                <div class="heading">
+                    <h1> IT'S NICE TO MEET YOU</h1>
+                </div>
+            </div>
+            <div class="col-12 text-center ">
+                <a href="#"> <button type="button" class="btn btn-warning btn-lg text-white">Tell Me
+                        More</button></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- box1 end   -->
+
+<!-- box2 start -->
+<section class="box2" id="SERVICES">
+    <div class="contianer p-4">
+        <div class="text-center">
+            <h2 class="heading text-uppercase">Services</h2>
+            <h3 class="subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <div class="row text-center mt-4 p-4">
+            <div class="col-md-4">
+                <span><img src="img1.png" alt="" width="120px"> </span>
+                <h4 class="my-4">E-Commerce</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestiae
+                    dolore ullam at laudantium pariatur praesentium perspiciatis quasi voluptatum.</p>
+            </div>
+            <div class="col-md-4">
+                <span><img src="img2.png" alt="" width="120px"> </span>
+                <h4 class="my-4">Responsive Design</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestiae
+                    dolore ullam at laudantium pariatur praesentium perspiciatis quasi voluptatum.</p>
+            </div>
+            <div class="col-md-4">
+                <span><img src="img3.png" alt="" width="120px"> </span>
+                <h4 class="my-4">Web Security</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione molestiae
+                    dolore ullam at laudantium pariatur praesentium perspiciatis quasi voluptatum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- box2 end  -->
+
+<!-- box3 start  -->
+<section class="box3 bg-light" id="PORTFOLIO">
+    <div class="contianer p-4 mt-4">
+        <div class="text-center">
+            <h2 class="heading text-uppercase">PORTFOLIO</h2>
+            <h5 class="subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h5>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 text-center mt-4 p-3">
+                <img src="img4.jpg" alt="" width="100%">
+                <div class="text bg-white pt-3 pb-2">
+                    <h4 class=" heading text-uppercase">Threads</h4>
+                    <h5 class="subheading text-muted">Illustration</h5>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center mt-4 p-3">
+                <img src="img5.jpg" alt="" width="100%">
+                <div class="text bg-white pt-3 pb-2">
+                    <h4 class=" heading text-uppercase">Explore</h4>
+                    <h5 class="subheading text-muted">Graphic Design</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center mt-4 p-3">
+                <img src="img6.jpg" alt="" width="100%">
+                <div class="text bg-white pt-3 pb-2">
+                    <h4 class=" heading text-uppercase">Finish</h4>
+                    <h5 class="subheading text-muted">Identity</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center mt-4 p-3">
+                <img src="img7.jpg" alt="" width="100%">
+                <div class="text bg-white pt-3 pb-2">
+                    <h4 class=" heading text-uppercase">Lines</h4>
+                    <h5 class="subheading text-muted">Branding</h5>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center mt-4 p-3">
+                <img src="img8.jpg" alt="" width="100%">
+                <div class="text bg-white pt-3 pb-2">
+                    <h4 class=" heading text-uppercase">South West</h4>
+                    <h5 class="subheading text-muted">Website Design</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center mt-4 p-3">
+                <img src="img9.jpg" alt="" width="100%">
+                <div class="text bg-white pt-3 pb-2">
+                    <h4 class=" heading text-uppercase">Window</h4>
+                    <h5 class="subheading text-muted">Photography</h5>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- box3 end  -->
+
+
+
+<!-- box4 start  -->
+<section class="box4" id="ABOUT">
+    <div class="container p-4 mt-4">
+        <div class="text-center">
+            <h2 class="heading text-uppercase">ABOUT</h2>
+            <h5 class="subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h5>
+        </div>
+
+
+        <div class="row mt-4 p-4">
+            <div class="col-lg-5 mt-4">
+                <h3>2009-2011 <br>
+                    Our Humble Beginnings</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum
+                    eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                    incidunt et ea quo dolore laudantium consectetur!</p>
+            </div>
+            <div class="col-lg-2 mt-4">
+                <img src="img10.jpg" alt="" class="rounded-circle">
+            </div>
+            <div class="col-lg-5 mt-4"></div>
+
+
+            <div class="col-lg-5 mt-4" style="margin-top:10%;"></div>
+            <div class="col-lg-2" style="margin-top:10%;">
+                <img src="img11.jpg" alt="" class="rounded-circle">
+            </div>
+            <div class="col-lg-5 " style="padding-left:23px; margin-top:10%;">
+                <h3 class="text-left">March 2011 <br>
+                    An Agency is Born</h3>
+                <p class="text-muted text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                    voluptatum
+                    eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                    incidunt et ea quo dolore laudantium consectetur!</p>
+            </div>
+
+
+
+            <div class="col-lg-5" style="margin-top:10%;">
+                <h3>December 2015 <br>
+                    Transition to Full Service</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum
+                    eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                    incidunt et ea quo dolore laudantium consectetur!</p>
+            </div>
+            <div class="col-lg-2" style="margin-top: 10%;">
+                <img src="img12.jpg" alt="" class="rounded-circle">
+            </div>
+            <div class="col-lg-5 mt-4" style="margin-top:10%;"></div>
+
+
+
+            <div class="col-lg-5 mt-4" style="margin-top:10%;"></div>
+            <div class="col-lg-2" style="margin-top:10%;">
+                <img src="img11.jpg" alt="" class="rounded-circle">
+            </div>
+            <div class="col-lg-5 " style="padding-left:23px; margin-top:10%;">
+                <h3 class="text-left">July 2020 <br>
+                    Phase Two Expansion
+                </h3>
+                <p class="text-muted text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                    voluptatum
+                    eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                    incidunt et ea quo dolore laudantium consectetur!</p>
+            </div>
+
+
+            <div class="col-lg-5" style="margin-top:10%;"></div>
+            <div class="col-lg-2" style="margin-top: 10%;">
+                <span>
+                    <p>Be Part <br> Of Our <br> Story!</p>
+                </span>
+            </div>
+            <div class="col-lg-5 mt-4" style="margin-top:10%;"></div>
+
+
+        </div>
+    </div>
+</section>
+<!-- box4 end  -->
+
+
+<!-- box5 start -->
+<section class="box5 bg-light p-4" id="TEAM">
+    <div class="contianer p-4 mt-4">
+        <div class="text-center ">
+            <h2 class="heading text-uppercase">OUR AMAZING TEAM</h2>
+            <h5 class="subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h5>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 text-left">
+                <img src="img13.jpg" alt="" width="100%">
+                <h4 class="text-center mt-4">Parveen Anand</h4>
+                <p class="text-center text-muted">Lead Desinger</p>
+
+
+                <span class="logo1 d-flex" style="margin-left:160px;">
+
+                    <img src="img16.png" alt=""
+                        style="height: 30px; width: 30px; margin-left: 0px; margin-right: 0px; border: 1px solid lightgrey;">
+                    <img src="img17.png" alt=""
+                        style="height: 30px; width: 30px; margin-left: 0px; margin-right: 0px; border: 1px solid lightgrey;">
+                    <img src="img18.png" alt=""
+                        style="height: 30px; width: 30px; margin-left: 0px; margin-right: 0px; border: 1px solid lightgrey; ">
+                </span>
+
+
+            </div>
+
+
+            <div class="col-lg-4 text-center">
+                <img src="img14.jpg" alt="" width="100%">
+                <h4 class="text-center mt-4">Diana Petersen</h4>
+                <p class="text-center text-muted">Lead Marketer</p>
+                <span class="logo2 d-flex" style="margin-left:160px;">
+
+                    <img src="img16.png" alt=""
+                        style="height: 30px; width: 30px; margin-left: 0px; margin-right: 0px; border: 1px solid lightgrey;">
+                    <img src="img17.png" alt=""
+                        style="height: 30px; width: 30px; margin-left: 0px; margin-right: 0px; border: 1px solid lightgrey;">
+                    <img src="img18.png" alt=""
+                        style="height: 30px; width: 30px; margin-left: 0px; margin-right: 0px; border: 1px solid lightgrey; ">
+                </span>
+            </div>
+
+
+            <div class="col-lg-4 text-right">
+                <img src="img15.jpg" alt="" width="100%">
+                <h4 class="text-center mt-4 ml-4">Larry Parker</h4>
+                <p class="text-center text-muted ml-4">Lead Developer</p>
+                <span class="logo3 d-flex" style="margin-left:150px;">
+
+                    <img src="img16.png" alt=""
+                        style="height: 30px; width: 30px; margin-left: 0px; margin-right: 0px; border: 1px solid lightgrey;">
+                    <img src="img17.png" alt=""
+                        style="height: 30px; width: 30px; margin-left: 0px; margin-right: 0px; border: 1px solid lightgrey;">
+                    <img src="img18.png" alt=""
+                        style="height: 30px; width: 30px; margin-left: 0px; margin-right: 0px; border: 1px solid lightgrey; ">
+                </span>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin-top: -23px;">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+                    laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- box5 end  -->
+
+
+<!-- box6 start  -->
+<section class="box6">
+    <div class="continer">
+        <div class="row text-center" style="width:100% ;">
+            <div class="col-lg-3">
+                <img src="img19.svg" alt="" width="100%" height="100%">
+            </div>
+            <div class="col-lg-3">
+                <img src="img20.svg" alt="" width="100%" height="100%">
+            </div>
+            <div class="col-lg-2">
+                <img src="img21.svg" alt="" width="100%" height="100%">
+            </div>
+            <div class="col-lg-4">
+                <img src="img22.svg" alt="" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- box6 end  -->
+
+<!-- box7 start  -->
+<section class="box7" id="CONTACT">
+    <div class="container text-center text-uppercase">
+        <h2>CONTACT US</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p><br>
+        <div class="row d-flex">
+            <div class="col-lg-6">
+                <form class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Your Name*"><br><br>
+                    <input type="email" name="email" id="email" placeholder="Your Email*"><br><br>
+                    <input type="text" name="phone" id="phone" placeholder="Your Phone*"><br><br>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <form class="form-group">
+                    <input type="text" name="message" id="message" placeholder="Your Message*">
+                </form>
+            </div>
+            <div class="col-lg-12 text-center">
+                <a href="#"> <button type="button" class="btn btn-warning btn-lg text-white">Send
+                        Message</button></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- box7 end  -->
+
+<!-- start  -->
+<div class="jumbotron mb-0 pt-3 pb-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-left">
+                <p>Copyright © Your Website 2022</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <img src="img16.png" alt="" width="30px" height="30px" class="mr-2">
+                <img src="img17.png" alt="" width="30px" height="30px" class="mr-2">
+                <img src="img18.png" alt="" width="30px" height="30px" class="mr-2">
+
+            </div>
+            <div class="col-sm-4 text-right">
+                <div class="links">
+                    <a href="#" class="text-decoration-none">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none ml-4">Term Of Use</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end  -->
+
+
+</body>
+
+</html>
